@@ -28,10 +28,19 @@ $THEME->doctype = 'html5';
 $THEME->yuicssmodules = array();
 $THEME->name = 'bootstrap';
 $THEME->parents = array();
+$devicetype = core_useragent::get_device_type(); // In moodlelib.php.
 if ('ltr' === get_string('thisdirection', 'langconfig')) {
-    $THEME->sheets = array('moodle', 'custom');
+    if ($devicetype == "mobile") {
+        $THEME->sheets = array('moodlem', 'custom');
+    } else {
+        $THEME->sheets = array('moodle', 'custom');
+    }
 } else {
-    $THEME->sheets = array('moodle-rtl', 'tinymce-rtl', 'yui2-rtl', 'forms-rtl', 'custom');
+    if ($devicetype == "mobile") {
+        $THEME->sheets = array('moodlem-rtl', 'tinymce-rtl', 'yui2-rtl', 'forms-rtl', 'custom');
+    } else {
+        $THEME->sheets = array('moodle-rtl', 'tinymce-rtl', 'yui2-rtl', 'forms-rtl', 'custom');
+    }
 }
 $THEME->supportscssoptimisation = false;
 

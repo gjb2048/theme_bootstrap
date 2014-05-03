@@ -26,4 +26,5 @@
 
 $plugins = array(
     'bootstrap' => array('files' => array('bootstrap-3_1_1.js')),
+    'bootstrapm' => array('files' => array('bootstrap-3_1_1_m.js'))
 );

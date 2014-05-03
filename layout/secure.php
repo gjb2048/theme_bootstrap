@@ -18,8 +18,7 @@ $hassidepre = $PAGE->blocks->region_has_content('side-pre', $OUTPUT);
 $hassidepost = $PAGE->blocks->region_has_content('side-post', $OUTPUT);
 $regions = bootstrap_grid($hassidepre, $hassidepost);
 
-$PAGE->requires->jquery();
-$PAGE->requires->jquery_plugin('bootstrap', 'theme_bootstrap');
+theme_bootstrap_jquery_load($PAGE);
 
 $settingshtml = theme_bootstrap_html_for_settings($PAGE);
 

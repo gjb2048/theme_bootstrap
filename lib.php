@@ -119,6 +119,16 @@ function theme_bootstrap_html_for_settings($PAGE) {
     return $html;
 }
 
+function theme_bootstrap_jquery_load($page) {
+    $page->requires->jquery();
+    $devicetype = core_useragent::get_device_type(); // In moodlelib.php.
+    if ($devicetype == "mobile") {
+        $page->requires->jquery_plugin('bootstrapm', 'theme_bootstrap');
+    } else {
+        $page->requires->jquery_plugin('bootstrap', 'theme_bootstrap');
+    }
+}
+
 function theme_bootstrap_brand_font_link($settings) {
     global $SITE;
     $fontname = $settings->brandfont;

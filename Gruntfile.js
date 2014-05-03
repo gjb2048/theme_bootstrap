@@ -231,6 +231,16 @@ module.exports = function(grunt) {
                 src: 'less/moodle.less',
                 dest: 'style/moodle.css'
             },
+            moodlem: {
+                options: {
+                    compress: false,
+                    sourceMap: true,
+                    sourceMapRootpath: '/theme/' + THEMEDIR,
+                    sourceMapFilename: 'sourcemap-moodlem.json'
+                },
+                src: 'less/moodlem.less',
+                dest: 'style/moodlem.css'
+            },
             // Compile editor styles.
             editor: {
                 options: {
@@ -267,6 +277,10 @@ module.exports = function(grunt) {
             rtl: {
                 src: 'style/moodle.css',
                 dest: 'style/moodle-rtl.css'
+            },
+            rtlm: {
+                src: 'style/moodlem.css',
+                dest: 'style/moodlem-rtl.css'
             }
         },
         copy: {
@@ -304,6 +318,32 @@ module.exports = function(grunt) {
                         to: '[[pix:y/lp_rtl]]'
                     }]
             },
+            rtl_imagesm: {
+                src: 'style/moodlem-rtl.css',
+                    overwrite: true,
+                    replacements: [{
+                        from: '[[pix:theme|fp/path_folder]]',
+                        to: '[[pix:theme|fp/path_folder_rtl]]'
+                    }, {
+                        from: '[[pix:t/collapsed]]',
+                        to: '[[pix:t/collapsed_rtl]]'
+                    }, {
+                        from: '[[pix:t/collapsed_empty]]',
+                        to: '[[pix:t/collapsed_empty_rtl]]'
+                    }, {
+                        from: '[[pix:y/tn]]',
+                        to: '[[pix:y/tn_rtl]]'
+                    }, {
+                        from: '[[pix:y/tp]]',
+                        to: '[[pix:y/tp_rtl]]'
+                    }, {
+                        from: '[[pix:y/ln]]',
+                        to: '[[pix:y/ln_rtl]]'
+                    }, {
+                        from: '[[pix:y/lp]]',
+                        to: '[[pix:y/lp_rtl]]'
+                    }]
+            },
             svg_colors: {
                 src: 'pix_core/**/*.svg',
                     overwrite: true,
@@ -314,6 +354,23 @@ module.exports = function(grunt) {
             },
             font_fix: {
                 src: 'style/moodle.css',
+                    overwrite: true,
+                    replacements: [{
+                        from: 'glyphicons-halflings-regular.eot',
+                        to: 'glyphicons-halflings-regular.eot]]',
+                    }, {
+                        from: 'glyphicons-halflings-regular.svg',
+                        to: 'glyphicons-halflings-regular.svg]]',
+                    }, {
+                        from: 'glyphicons-halflings-regular.ttf',
+                        to: 'glyphicons-halflings-regular.ttf]]',
+                    }, {
+                        from: 'glyphicons-halflings-regular.woff',
+                        to: 'glyphicons-halflings-regular.woff]]',
+                    }]
+            },
+            font_fixm: {
+                src: 'style/moodlem.css',
                     overwrite: true,
                     replacements: [{
                         from: 'glyphicons-halflings-regular.eot',
@@ -412,7 +469,7 @@ module.exports = function(grunt) {
     grunt.registerTask("decache", ["exec:decache"]);
 
     grunt.registerTask("bootswatch", _bootswatch);
-    grunt.registerTask("compile", ["less", "replace:font_fix", "cssflip", "replace:rtl_images", "decache"]);
+    grunt.registerTask("compile", ["less", "replace:font_fix", "replace:font_fixm", "cssflip", "replace:rtl_images", "replace:rtl_imagesm", "decache"]);
     grunt.registerTask("swatch", ["bootswatch", "svg", "compile"]);
     grunt.registerTask("svg", ["copy:svg", "replace:svg_colors"]);
 };
