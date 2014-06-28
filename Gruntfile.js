@@ -224,6 +224,8 @@ module.exports = function(grunt) {
             moodle: {
                 options: {
                     compress: false,
+                    paths: "./less",
+                    report: 'min',
                     sourceMap: true,
                     sourceMapRootpath: '/theme/' + THEMEDIR,
                     sourceMapFilename: 'style/moodle.css'
@@ -235,6 +237,8 @@ module.exports = function(grunt) {
             editor: {
                 options: {
                     compress: false,
+                    paths: "./less",
+                    report: 'min',
                     sourceMap: true,
                     sourceMapRootpath: '/theme/' + THEMEDIR,
                     sourceMapFilename: 'style/editor.css'
@@ -258,7 +262,10 @@ module.exports = function(grunt) {
           },
           core: {
             options: {
-              map: true
+              map: {
+                prev: 'style/',
+                sourceContent: true
+              }
             },
             src: ['style/moodle.css', "style/moodle-rtl.css", "style/editor.css"],
           },

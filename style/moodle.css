@@ -89,7 +89,7 @@ figure {
 hr {
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
-  box-sizing: content-box;
+          box-sizing: content-box;
   height: 0;
 }
 pre {
@@ -140,8 +140,8 @@ input {
 input[type="checkbox"],
 input[type="radio"] {
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
 }
 input[type="number"]::-webkit-inner-spin-button,
@@ -190,7 +190,7 @@ th {
     color: #000 !important;
     background: transparent !important;
     -webkit-box-shadow: none !important;
-    box-shadow: none !important;
+            box-shadow: none !important;
   }
   a,
   a:visited {
@@ -331,7 +331,7 @@ img {
   border-radius: 4px;
   -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+     transition: all 0.2s ease-in-out;
   display: inline-block;
   max-width: 100%;
   height: auto;
@@ -725,7 +725,7 @@ kbd {
   background-color: #333333;
   border-radius: 3px;
   -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.25);
-  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.25);
+          box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
 pre {
   display: block;
@@ -1728,7 +1728,7 @@ output {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
   -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+     transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
 .form-control:focus {
   border-color: #66afe9;
@@ -2391,7 +2391,7 @@ input[type="button"].btn-block {
   opacity: 0;
   -webkit-transition: opacity 0.15s linear;
   -o-transition: opacity 0.15s linear;
-  transition: opacity 0.15s linear;
+     transition: opacity 0.15s linear;
 }
 .fade.in {
   opacity: 1;
@@ -2408,7 +2408,7 @@ input[type="button"].btn-block {
   overflow: hidden;
   -webkit-transition: height 0.35s ease;
   -o-transition: height 0.35s ease;
-  transition: height 0.35s ease;
+     transition: height 0.35s ease;
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
@@ -3061,7 +3061,7 @@ input[type="button"].btn-block {
   -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   -webkit-background-clip: padding-box;
-  background-clip: padding-box;
+          background-clip: padding-box;
 }
 .dropdown-menu.pull-right {
   right: 0;
@@ -3757,7 +3757,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   padding-left: 15px;
   border-top: 1px solid transparent;
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
   -webkit-overflow-scrolling: touch;
 }
 .navbar-collapse.in {
@@ -3768,7 +3768,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     width: auto;
     border-top: 0;
     -webkit-box-shadow: none;
-    box-shadow: none;
+            box-shadow: none;
   }
   .navbar-collapse.collapse {
     display: block !important;
@@ -3896,7 +3896,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     background-color: transparent;
     border: 0;
     -webkit-box-shadow: none;
-    box-shadow: none;
+            box-shadow: none;
   }
   .navbar-nav .open .dropdown-menu > li > a,
   .navbar-nav .open .dropdown-menu .dropdown-header {
@@ -4518,7 +4518,7 @@ a.list-group-item.active > .badge,
   border-radius: 4px;
   -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+     transition: all 0.2s ease-in-out;
 }
 .thumbnail > img,
 .thumbnail a > img {
@@ -4653,19 +4653,19 @@ a.thumbnail.active {
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
   -webkit-transition: width 0.6s ease;
   -o-transition: width 0.6s ease;
-  transition: width 0.6s ease;
+     transition: width 0.6s ease;
 }
 .progress-striped .progress-bar {
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   -webkit-background-size: 40px 40px;
-  background-size: 40px 40px;
+          background-size: 40px 40px;
 }
 .progress.active .progress-bar {
   -webkit-animation: progress-bar-stripes 2s linear infinite;
   -o-animation: progress-bar-stripes 2s linear infinite;
-  animation: progress-bar-stripes 2s linear infinite;
+     animation: progress-bar-stripes 2s linear infinite;
 }
 .progress-bar-success {
   background-color: #5cb85c;
@@ -5235,7 +5235,7 @@ button.close {
   -webkit-transform: translate(0, -25%);
   -ms-transform: translate(0, -25%);
   -o-transform: translate(0, -25%);
-  transform: translate(0, -25%);
+     transform: translate(0, -25%);
   -webkit-transition: -webkit-transform 0.3s ease-out;
   -o-transition: -o-transform 0.3s ease-out;
   transition: transform 0.3s ease-out;
@@ -5244,7 +5244,7 @@ button.close {
   -webkit-transform: translate(0, 0);
   -ms-transform: translate(0, 0);
   -o-transform: translate(0, 0);
-  transform: translate(0, 0);
+     transform: translate(0, 0);
 }
 .modal-dialog {
   position: relative;
@@ -5260,7 +5260,7 @@ button.close {
   -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
   box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
   -webkit-background-clip: padding-box;
-  background-clip: padding-box;
+          background-clip: padding-box;
   outline: none;
 }
 .modal-backdrop {
@@ -5439,7 +5439,7 @@ button.close {
   text-align: left;
   background-color: #ffffff;
   -webkit-background-clip: padding-box;
-  background-clip: padding-box;
+          background-clip: padding-box;
   border: 1px solid #cccccc;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 6px;
@@ -5561,7 +5561,7 @@ button.close {
   position: relative;
   -webkit-transition: 0.6s ease-in-out left;
   -o-transition: 0.6s ease-in-out left;
-  transition: 0.6s ease-in-out left;
+     transition: 0.6s ease-in-out left;
 }
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
@@ -7068,7 +7068,7 @@ body#page-lib-editor-tinymce-plugins-moodlemedia-preview {
   width: 28px;
   height: 16px;
   -webkit-background-size: 100% 100%;
-  background-size: 100%;
+          background-size: 100%;
 }
 .moodle-dialogue-base .moodle-dialogue {
   padding: 0;
@@ -7085,7 +7085,7 @@ body#page-lib-editor-tinymce-plugins-moodlemedia-preview {
   border: 1px solid #ccc;
   border-radius: 10px;
   -webkit-box-shadow: 5px 5px 20px 0 #666;
-  box-shadow: 5px 5px 20px 0 #666;
+          box-shadow: 5px 5px 20px 0 #666;
 }
 .moodle-dialogue-base .moodle-dialogue-wrap .moodle-dialogue-hd,
 .moodle-dialogue-base .moodle-dialogue-wrap .moodle-dialogue-hd.yui3-widget-hd {
@@ -7107,7 +7107,7 @@ body#page-lib-editor-tinymce-plugins-moodlemedia-preview {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffcccccc', GradientType=0);
   -webkit-filter: 0;
-  filter: 0;
+          filter: 0;
 }
 .moodle-dialogue-base .moodle-dialogue-wrap .moodle-dialogue-hd h1 {
   margin: 0;
@@ -7300,7 +7300,7 @@ body#page-lib-editor-tinymce-plugins-moodlemedia-preview {
   overflow-y: auto;
   max-width: 20.3em;
   -webkit-box-shadow: inset 0 0 30px 0px #ccc;
-  box-shadow: inset 0 0 30px 0px #ccc;
+          box-shadow: inset 0 0 30px 0px #ccc;
 }
 /* Settings for option rows and option subtypes */
 .choosercontainer #chooseform .moduletypetitle,
@@ -7371,7 +7371,7 @@ body#page-lib-editor-tinymce-plugins-moodlemedia-preview {
 .choosercontainer #chooseform .selected {
   background-color: #ffffff;
   -webkit-box-shadow: 0px 0 10px 0 #ccc;
-  box-shadow: 0px 0 10px 0 #ccc;
+          box-shadow: 0px 0 10px 0 #ccc;
 }
 .section-modchooser-link img.smallicon {
   padding: 3px;
@@ -7603,7 +7603,7 @@ fieldset[disabled] .jsenabled .moodle-actionmenu[data-enhance] .toggle-display.t
   -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   -webkit-background-clip: padding-box;
-  background-clip: padding-box;
+          background-clip: padding-box;
   display: block;
   text-align: left;
   /** bottom left of button **/
@@ -8004,7 +8004,7 @@ img.iconsmall {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
   -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+     transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   margin-bottom: 0.3em;
 }
 .path-admin .roleassigntable input[type="text"]:focus {
@@ -8388,7 +8388,7 @@ textarea.path-admin .roleassigntable input[type="text"] {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
   -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+     transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
 .path-calendar .maincalendar .cal_courses_flt select:focus {
   border-color: #66afe9;
@@ -8672,7 +8672,7 @@ textarea.path-calendar .maincalendar .cal_courses_flt select {
   text-align: left;
   background-color: #ffffff;
   -webkit-background-clip: padding-box;
-  background-clip: padding-box;
+          background-clip: padding-box;
   border: 1px solid #cccccc;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 6px;
@@ -9086,7 +9086,7 @@ span.editinstructions {
   text-decoration: none;
   z-index: 9999;
   -webkit-box-shadow: 2px 2px 5px 1px #ccc;
-  box-shadow: 2px 2px 5px 1px #ccc;
+          box-shadow: 2px 2px 5px 1px #ccc;
   border: 1px solid #bce8f1;
 }
 #dndupload-status {
@@ -9103,7 +9103,7 @@ span.editinstructions {
   width: 30em;
   margin-left: -15em;
   -webkit-box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
-  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
   border-top-right-radius: 0;
   border-top-left-radius: 0;
   z-index: -1;
@@ -9161,7 +9161,7 @@ span.editinstructions {
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
   -webkit-transition: width 0.6s ease;
   -o-transition: width 0.6s ease;
-  transition: width 0.6s ease;
+     transition: width 0.6s ease;
 }
 .dndupload-hidden {
   display: none;
@@ -9789,7 +9789,7 @@ span.editinstructions {
   border: 1px solid #fff;
   display: inline-block;
   -webkit-box-shadow: 5px 5px 20px 0 #666;
-  box-shadow: 5px 5px 20px 0 #666;
+          box-shadow: 5px 5px 20px 0 #666;
 }
 #filesskin .yui3-widget-hd {
   border-radius: 10px 10px 0 0;
@@ -9801,7 +9801,7 @@ span.editinstructions {
   letter-spacing: 1px;
   text-shadow: 1px 1px 1px #fff;
   -webkit-filter: dropshadow(color=#ffffff, offx=1, offy=1);
-  filter: dropshadow(color=#ffffff, offx=1, offy=1);
+          filter: dropshadow(color=#ffffff, offx=1, offy=1);
   background-image: -webkit-linear-gradient(top, #ffffff 0%, #cccccc 100%);
   background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#cccccc));
   background-image: -o-linear-gradient(top, #ffffff 0%, #cccccc 100%);
@@ -9817,7 +9817,7 @@ span.editinstructions {
   border-radius: 10px;
   display: inline-block;
   -webkit-box-shadow: 2px 2px 3px .1px #999;
-  box-shadow: 2px 2px 3px .1px #999;
+          box-shadow: 2px 2px 3px .1px #999;
 }
 .moodle-dialogue-base .filepicker .moodle-dialogue-wrap .moodle-dialogue-bd {
   padding: 0px;
@@ -10003,13 +10003,13 @@ span.editinstructions {
   padding: 3px;
   vertical-align: middle;
   -webkit-box-shadow: 1px 1px 2px 0 #ccc;
-  box-shadow: 1px 1px 2px 0 #ccc;
+          box-shadow: 1px 1px 2px 0 #ccc;
 }
 .fp-iconview .fp-thumbnail:hover {
   background: #fff;
   border: 1px solid #ddd;
   -webkit-box-shadow: inset 0 0 10px 0px #ccc;
-  box-shadow: inset 0 0 10px 0px #ccc;
+          box-shadow: inset 0 0 10px 0px #ccc;
 }
 .fp-iconview .fp-filename-field {
   height: 33px;
@@ -10316,7 +10316,7 @@ a.ygtvspacer:hover {
   background: #fff;
   border: 1px solid #ddd;
   -webkit-box-shadow: inset 0 0 10px 0 #ccc;
-  box-shadow: inset 0 0 10px 0 #ccc;
+          box-shadow: inset 0 0 10px 0 #ccc;
 }
 .fp-select .fp-thumbnail img {
   border: 1px solid #ddd;
@@ -10587,7 +10587,7 @@ a.ygtvspacer:hover {
   padding-top: 85px;
   text-align: center;
   -webkit-box-shadow: 0px 0 0 10px #fff;
-  box-shadow: 0px 0 0 10px #fff;
+          box-shadow: 0px 0 0 10px #fff;
 }
 .filepicker-filelist.dndupload-over .dndupload-target,
 .filemanager-container.dndupload-over .dndupload-target {
@@ -10798,7 +10798,7 @@ a.ygtvspacer:hover {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
   -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+     transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   display: inline-block;
 }
 .box.message .message_form input[type="text"]:focus {
@@ -11033,7 +11033,7 @@ textarea.box.message .message_form input[type="text"] {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
   -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+     transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   width: auto;
 }
 @media (min-width: 992px) {
@@ -11734,7 +11734,7 @@ textarea.box.message .contactselector form#usergroupform fieldset select {
   text-align: left;
   background-color: #ffffff;
   -webkit-background-clip: padding-box;
-  background-clip: padding-box;
+          background-clip: padding-box;
   border: 1px solid #cccccc;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 6px;
@@ -11859,7 +11859,7 @@ textarea {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
   -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+     transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   height: 200px;
 }
 textarea:focus {
@@ -11957,7 +11957,7 @@ textareatextarea {
   border: 1px solid #ccc;
   border-top: 0 none;
   -webkit-box-shadow: 5px 5px 20px 0 #666;
-  box-shadow: 5px 5px 20px 0 #666;
+          box-shadow: 5px 5px 20px 0 #666;
 }
 #qtypechoicecontainer #chooseqtype {
   width: 40em;
@@ -11991,7 +11991,7 @@ textareatextarea {
 #chooseqtype .selected {
   background-color: #fff;
   -webkit-box-shadow: 0px 0 10px 0 #ccc;
-  box-shadow: 0px 0 10px 0 #ccc;
+          box-shadow: 0px 0 10px 0 #ccc;
 }
 #chooseqtype .instruction,
 #chooseqtype .qtypesummary {
@@ -12238,13 +12238,13 @@ body.path-question-type .fitem_fgroup .accesshide {
   background-color: #dff0d8;
   border-color: #3c763d;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 .formulation select.correct:focus,
 .formulation input.correct:focus {
   border-color: #2b542c;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168;
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168;
 }
 .formulation select.partiallycorrect,
 .formulation input.partiallycorrect {
@@ -12252,13 +12252,13 @@ body.path-question-type .fitem_fgroup .accesshide {
   background-color: #fcf8e3;
   border-color: #8a6d3b;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 .formulation select.partiallycorrect:focus,
 .formulation input.partiallycorrect:focus {
   border-color: #66512c;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #c0a16b;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #c0a16b;
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #c0a16b;
 }
 .formulation select.incorrect,
 .formulation input.incorrect {
@@ -12266,13 +12266,13 @@ body.path-question-type .fitem_fgroup .accesshide {
   background-color: #f2dede;
   border-color: #a94442;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 .formulation select.incorrect:focus,
 .formulation input.incorrect:focus {
   border-color: #843534;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
 }
 .que .grading,
 .que .comment,
@@ -12921,7 +12921,7 @@ a#hidebankcmd {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
   -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+     transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   width: 100%;
   max-width: none;
 }
@@ -13514,7 +13514,7 @@ ol {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
   -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+     transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
 .block .singleselect select:focus {
   border-color: #66afe9;
@@ -13597,7 +13597,7 @@ textarea.block .singleselect select {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
   -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+     transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
 .blogsearchform input[type="text"]:focus,
 .searchform input[type="text"]:focus {
@@ -13747,7 +13747,7 @@ textarea.searchform input[type="text"] {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
   -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+     transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
 .mform .fcontainer .fitem .felement select:focus,
 .mform fieldset .fitem .felement select:focus,
@@ -13983,7 +13983,7 @@ textarea.mform fieldset .fitem .felement input[type="password"] {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
   -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+     transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
 .form-item .form-setting select:focus,
 .form-item .form-setting input[type="text"]:focus,
@@ -14073,7 +14073,7 @@ select.singleselect {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
   -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+     transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   width: auto;
   max-width: 300px;
   display: inline;
@@ -14424,7 +14424,7 @@ select {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
   -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+     transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
 #page-mod-forum-discuss .discussioncontrols .discussioncontrol .singleselect select.singleselect:focus {
   border-color: #66afe9;
@@ -14471,7 +14471,7 @@ textarea#page-mod-forum-discuss .discussioncontrols .discussioncontrol .singlese
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
   -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+     transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   width: auto;
   float: left;
 }
@@ -15070,8 +15070,8 @@ table.flexible .emptyrow {
 .right_scroller .generaltable td {
   line-height: 20px;
   -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
+     -moz-box-sizing: content-box;
+          box-sizing: content-box;
 }
 .singlebutton div {
   display: inline-block;
@@ -15743,7 +15743,7 @@ input.fp-btn-choose {
   text-align: left;
   background-color: #ffffff;
   -webkit-background-clip: padding-box;
-  background-clip: padding-box;
+          background-clip: padding-box;
   border: 1px solid #cccccc;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 6px;
@@ -16827,4 +16827,4 @@ fieldset[disabled] #rubric-rubric.gradingform_rubric .addcriterion {
 .path-grade-report-grader .grade_icons {
   display: inline;
 }
-/*# sourceMappingURL=/theme/bootstrap/style/moodle.css.map */
+/*# sourceMappingURL=/moodle27/theme/bootstrap/style/moodle.css.map */
