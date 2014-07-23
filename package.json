@@ -29,7 +29,8 @@
     "grunt-css-flip": "~0.3.0",
     "grunt-contrib-copy": "~0.5.0",
     "grunt-contrib-cssmin": "~0.10.0",
-    "grunt-csscomb": "~2.0.1"
+    "grunt-csscomb": "~2.0.1",
+    "grunt-svg2png": "~0.2.5"
   },
   "license": "GPL-3.0+"
 }

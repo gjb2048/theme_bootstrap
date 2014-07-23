@@ -143,8 +143,8 @@
  * grunt replace:font_fix    Correct the format for the Moodle font
  *                           loader to pick up the Glyphicon font.
  *
- * grunt replace:svg_colors  Change the color of the SVGs in pix_core by
- *                           text replacing #999 with a new hex color.
+ * grunt img                 Change the colour of the images by
+ *                           text replacing #999 with a new hex colour.
  *                           Note this requires the SVGs to be #999 to
  *                           start with or the replace will do nothing
  *                           so should usually be preceded by copying
@@ -152,7 +152,7 @@
  *
  *                           Options:
  *
- *                           --svgcolor=<hexcolor> Hex color to use for SVGs
+ *                           --svgcolour=<hexcolour> Hex colour to use for SVGs
  *
  * grunt cssflip    Create moodle-rtl.css by flipping the direction styles
  *                  in moodle.css.
@@ -194,7 +194,7 @@ module.exports = function(grunt) {
     decachephp += 'theme_reset_all_caches();';
 
     var swatchname = grunt.option('name') || '';
-    var defaultsvgcolor = {
+    var defaultsvgcolour = {
         amelia: '#e8d069',
         bootstrap: '#428bca',
         classic: '#428bca',
@@ -216,7 +216,7 @@ module.exports = function(grunt) {
         united: '#dd4814',
         yeti: '#008cba',
     };
-    var svgcolor = grunt.option('svgcolor') || defaultsvgcolor[swatchname] || '#999';
+    var svgcolour = grunt.option('svgcolour') || defaultsvgcolour[swatchname] || '#999';
 
     grunt.initConfig({
         less: {
@@ -359,20 +359,20 @@ module.exports = function(grunt) {
                         to: '[[pix:y/lp_rtl]]'
                     }]
             },
-            svg_colors_core: {
+            svg_colours_core: {
                 src: 'pix_core/**/*.svg',
                     overwrite: true,
                     replacements: [{
                         from: '#999',
-                        to: svgcolor
+                        to: svgcolour
                     }]
             },
-            svg_colors_plugins: {
+            svg_colours_plugins: {
                 src: 'pix_plugins/**/*.svg',
                     overwrite: true,
                     replacements: [{
                         from: '#999',
-                        to: svgcolor
+                        to: svgcolour
                     }]
             },
             font_fix: {
@@ -399,6 +399,56 @@ module.exports = function(grunt) {
                         from: 'sourceMappingURL=',
                         to: 'sourceMappingURL=/theme/'+ THEMEDIR + '/style/'
                     }]
+            }
+        },
+        svg2png: {
+            core_root: {
+                files: [
+                    // rasterize all SVG files in "pix_core/" and to "pix_core/"
+                    { cwd: 'pix_core/', src: ['*.svg'], dest: 'pix_core/' }
+                ]
+            },
+            core_a: {
+                files: [
+                    // rasterize all SVG files in "pix_core/a" and its subdirectories to "pix_core/a"
+                    { cwd: 'pix_core/a/', src: ['**/*.svg'], dest: 'pix_core/a/' }
+                ]
+            },
+            core_e: {
+                files: [
+                    // rasterize all SVG files in "pix_core/e" and its subdirectories to "pix_core/e"
+                    { cwd: 'pix_core/e/', src: ['**/*.svg'], dest: 'pix_core/e/' }
+                ]
+            },
+            core_g: {
+                files: [
+                    // rasterize all SVG files in "pix_core/g" and its subdirectories to "pix_core/g"
+                    { cwd: 'pix_core/g/', src: ['**/*.svg'], dest: 'pix_core/g/' }
+                ]
+            },
+            core_i: {
+                files: [
+                    // rasterize all SVG files in "pix_core/i" and its subdirectories to "pix_core/i"
+                    { cwd: 'pix_core/i/', src: ['**/*.svg'], dest: 'pix_core/i/' }
+                ]
+            },
+            core_t: {
+                files: [
+                    // rasterize all SVG files in "pix_core/t" and its subdirectories to "pix_core/t"
+                    { cwd: 'pix_core/t/', src: ['**/*.svg'], dest: 'pix_core/t/' }
+                ]
+            },
+            core_u: {
+                files: [
+                    // rasterize all SVG files in "pix_core/u" and its subdirectories to "pix_core/u"
+                    { cwd: 'pix_core/u/', src: ['**/*.svg'], dest: 'pix_core/u/' }
+                ]
+            },
+            plugins: {
+                files: [
+                    // rasterize all SVG files in "pix_plugins" and its subdirectories to "pix_plugins"
+                    { cwd: 'pix_plugins/', src: ['**/*.svg'], dest: 'pix_plugins/' }
+                ]
             }
         }
     });
@@ -480,6 +530,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-csscomb');
+    grunt.loadNpmTasks('grunt-svg2png');
 
     // Register tasks.
     grunt.registerTask("default", ["watch"]);
@@ -487,6 +538,7 @@ module.exports = function(grunt) {
 
     grunt.registerTask("bootswatch", _bootswatch);
     grunt.registerTask("compile", ["less", "replace:font_fix", "cssflip", "replace:rtl_images", "autoprefixer", 'csscomb', 'cssmin', "replace:sourcemap", "decache"]);
-    grunt.registerTask("swatch", ["bootswatch", "svg", "compile"]);
-    grunt.registerTask("svg", ["copy:svg_core", "copy:svg_plugins", "replace:svg_colors_core", "replace:svg_colors_plugins"]);
+    grunt.registerTask("swatch", ["bootswatch", "img", "compile"]);
+    grunt.registerTask("svg2png:core", ["svg2png:core_root", "svg2png:core_a", "svg2png:core_e", "svg2png:core_g", "svg2png:core_i", "svg2png:core_t", "svg2png:core_u"]);
+    grunt.registerTask("img", ["copy:svg_core", "copy:svg_plugins", "replace:svg_colours_core", "replace:svg_colours_plugins", "svg2png:core", "svg2png:plugins"]);
 };
