@@ -30,6 +30,7 @@ echo $OUTPUT->doctype() ?>
     <link rel="shortcut icon" href="<?php echo $OUTPUT->favicon(); ?>" />
     <?php echo $settingshtml->brandfontlink; ?>
     <?php echo $OUTPUT->standard_head_html() ?>
+    <link rel="stylesheet" href="<?php echo theme_bootstrap_get_csswww(); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui">
 </head>
 

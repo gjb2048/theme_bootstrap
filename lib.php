@@ -80,3 +80,41 @@ function theme_bootstrap_initialise_zoom(moodle_page $page) {
 function theme_bootstrap_get_zoom() {
     return get_user_preferences('theme_bootstrap_zoom', '');
 }
+
+// Moodle CSS file serving.
+function theme_bootstrap_get_csswww() {
+    global $CFG;
+
+    if (right_to_left()) {
+        $moodlecss = 'moodle-rtl.css';
+    } else {
+        $moodlecss = 'moodle.css';
+    }
+
+    $syscontext = context_system::instance();
+    $itemid = theme_get_revision();
+    $url = moodle_url::make_file_url("$CFG->wwwroot/pluginfile.php", "/$syscontext->id/theme_bootstrap/style/$itemid/$moodlecss");
+    // Now this is tricky because the we can not hard code http or https here, lets use the relative link.
+    // Note: unfortunately moodle_url does not support //urls yet.
+    $url = preg_replace('|^https?://|i', '//', $url->out(false));
+
+    return $url;
+}
+
+function theme_bootstrap_pluginfile($course, $cm, $context, $filearea, $args, $forcedownload, array $options = array()) {
+    if ($context->contextlevel == CONTEXT_SYSTEM) {
+        if ($filearea === 'style') {
+            global $CFG;
+            if (!empty($CFG->themedir)) {
+                $thestylepath = $CFG->themedir . '/bootstrap/style/';
+            } else {
+                $thestylepath = $CFG->dirroot . '/theme/bootstrap/style/';
+            }
+            send_file($thestylepath.$args[1], $args[1], 20 , 0, false, false, 'text/css');
+        } else {
+            send_file_not_found();
+        }
+    } else {
+        send_file_not_found();
+    }
+}

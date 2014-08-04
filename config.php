@@ -28,7 +28,7 @@ $THEME->doctype = 'html5';
 $THEME->yuicssmodules = array();
 $THEME->name = 'bootstrap';
 $THEME->parents = array();
-$THEME->sheets = array('moodle');
+$THEME->sheets = array('theme');  // moodle / moodle-rtl served in layout separately.
 $THEME->enable_dock = true;
 $THEME->supportscssoptimisation = false;
 

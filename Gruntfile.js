@@ -245,6 +245,19 @@ module.exports = function(grunt) {
                 },
                 src: 'less/editor.less',
                 dest: 'style/editor.css'
+            },
+            // Compile theme styles.
+            theme: {
+                options: {
+                    compress: false,
+                    strictMath: true,
+                    outputSourceFiles: true,
+                    sourceMap: true,
+                    sourceMapRootpath: '/theme/' + THEMEDIR,
+                    sourceMapFilename: 'style/theme.css.map'
+                },
+                src: 'less/theme.less',
+                dest: 'style/theme.css'
             }
         },
         autoprefixer: {
@@ -333,32 +346,6 @@ module.exports = function(grunt) {
             }
         },
         replace: {
-            rtl_images: {
-                src: 'style/moodle-rtl.css',
-                    overwrite: true,
-                    replacements: [{
-                        from: '[[pix:theme|fp/path_folder]]',
-                        to: '[[pix:theme|fp/path_folder_rtl]]'
-                    }, {
-                        from: '[[pix:t/collapsed]]',
-                        to: '[[pix:t/collapsed_rtl]]'
-                    }, {
-                        from: '[[pix:t/collapsed_empty]]',
-                        to: '[[pix:t/collapsed_empty_rtl]]'
-                    }, {
-                        from: '[[pix:y/tn]]',
-                        to: '[[pix:y/tn_rtl]]'
-                    }, {
-                        from: '[[pix:y/tp]]',
-                        to: '[[pix:y/tp_rtl]]'
-                    }, {
-                        from: '[[pix:y/ln]]',
-                        to: '[[pix:y/ln_rtl]]'
-                    }, {
-                        from: '[[pix:y/lp]]',
-                        to: '[[pix:y/lp_rtl]]'
-                    }]
-            },
             svg_colors_core: {
                 src: 'pix_core/**/*.svg',
                     overwrite: true,
@@ -379,17 +366,14 @@ module.exports = function(grunt) {
                 src: 'style/moodle.css',
                     overwrite: true,
                     replacements: [{
-                        from: 'glyphicons-halflings-regular.eot',
-                        to: 'glyphicons-halflings-regular.eot]]',
+                        from: 'src: url(\'.eot\');',
+                        to: '',
                     }, {
-                        from: 'glyphicons-halflings-regular.svg',
-                        to: 'glyphicons-halflings-regular.svg]]',
+                        from: 'src: url(\'.eot?#iefix\') format(\'embedded-opentype\'), url(\'.woff\') format(\'woff\'), url(\'.ttf\') format(\'truetype\'), url(\'.svg#\') format(\'svg\');',
+                        to: '',
                     }, {
-                        from: 'glyphicons-halflings-regular.ttf',
-                        to: 'glyphicons-halflings-regular.ttf]]',
-                    }, {
-                        from: 'glyphicons-halflings-regular.woff',
-                        to: 'glyphicons-halflings-regular.woff]]',
+                        from: '@font-face \{[^\n]font-family: \'Glyphicons Halflings\';[^\n]\}', // TODO: Intent is to remove with REGEX, but not working.  Leaves empty font-face declaration in CSS.
+                        to: '',
                     }]
             },
             sourcemap: {
@@ -486,7 +470,7 @@ module.exports = function(grunt) {
     grunt.registerTask("decache", ["exec:decache"]);
 
     grunt.registerTask("bootswatch", _bootswatch);
-    grunt.registerTask("compile", ["less", "replace:font_fix", "cssflip", "replace:rtl_images", "autoprefixer", 'csscomb', 'cssmin', "replace:sourcemap", "decache"]);
+    grunt.registerTask("compile", ["less", "replace:font_fix", "cssflip", "autoprefixer", 'csscomb', 'cssmin', "replace:sourcemap", "decache"]);
     grunt.registerTask("swatch", ["bootswatch", "svg", "compile"]);
     grunt.registerTask("svg", ["copy:svg_core", "copy:svg_plugins", "replace:svg_colors_core", "replace:svg_colors_plugins"]);
 };

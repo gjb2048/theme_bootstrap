@@ -322,8 +322,6 @@ th {
 
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url('[[font:theme|glyphicons-halflings-regular.eot]]');
-  src: url('[[font:theme|glyphicons-halflings-regular.eot]]?#iefix') format('embedded-opentype'), url('[[font:theme|glyphicons-halflings-regular.woff]]') format('woff'), url('[[font:theme|glyphicons-halflings-regular.ttf]]') format('truetype'), url('[[font:theme|glyphicons-halflings-regular.svg]]#glyphicons_halflingsregular') format('svg');
 }
 
 .glyphicon {
@@ -5937,7 +5935,7 @@ a.thumbnail.active {
   }
 
   to {
-    background-position: 100% 0;
+    background-position: 0 0;
   }
 }
 
@@ -5947,7 +5945,7 @@ a.thumbnail.active {
   }
 
   to {
-    background-position: 100% 0;
+    background-position: 0 0;
   }
 }
 
@@ -5957,7 +5955,7 @@ a.thumbnail.active {
   }
 
   to {
-    background-position: 100% 0;
+    background-position: 0 0;
   }
 }
 
@@ -8433,13 +8431,8 @@ a.autolink.glossary:hover {
 
 .collapsible-actions .collapseexpand {
   padding-right: 20px;
-  background-image: url([[pix:t/collapsed_rtl]]);
   background-position: right;
   background-repeat: no-repeat;
-}
-
-.collapsible-actions .collapse-all {
-  background-image: url([[pix:t/expanded]]);
 }
 
 .yui-overlay .yui-widget-bd {
@@ -8976,9 +8969,8 @@ a.skip:active {
 }
 
 .smartselect .smartselect_submenuitem {
-  background-image: url([[pix:t/collapsed_rtl]]);
   background-repeat: no-repeat;
-  background-position: right 100%;
+  background-position: 0%;
 }
 
 /** Spanning mode */
@@ -9266,7 +9258,6 @@ body#page-lib-editor-tinymce-plugins-moodlemedia-preview {
   display: inline-block;
   cursor: pointer;
   padding: 0;
-  background-image: url([[pix:theme|sprite]]);
   background-repeat: no-repeat;
   border-style: none;
 }
@@ -11589,7 +11580,6 @@ textarea.path-calendar .maincalendar .cal_courses_flt select {
   position: absolute;
   left: 22px;
   top: 3px;
-  background: url([[pix:i/ajaxloader]]) no-repeat;
 }
 
 #page-site-index .subscribelink {
@@ -11819,10 +11809,6 @@ span.editinstructions {
   padding: 0 5px;
 }
 
-.coursebox.remotehost > .info > .categoryname a {
-  background-image: url([[pix:moodle|i/mnethost]]);
-}
-
 .coursebox .content {
   clear: both;
 }
@@ -11910,7 +11896,6 @@ span.editinstructions {
 }
 
 .course_category_tree .category > .info > .categoryname {
-  background-image: url([[pix:t/collapsed_empty_rtl]]);
   background-repeat: no-repeat;
   padding: 2px 18px;
   margin: 3px;
@@ -11936,13 +11921,8 @@ span.editinstructions {
 }
 
 .course_category_tree .category.with_children > .info > .categoryname {
-  background-image: url([[pix:t/expanded]]);
   cursor: pointer;
   line-height: 30px;
-}
-
-.course_category_tree .category.with_children.collapsed > .info > .categoryname {
-  background-image: url([[pix:t/collapsed_rtl]]);
 }
 
 .course_category_tree .category.collapsed > .content {
@@ -12708,7 +12688,6 @@ span.editinstructions {
 }
 
 .fp-toolbar .fp-tb-search input {
-  background: #ffffff url('[[pix:a/search]]') no-repeat 7px 7px;
   padding: 2px 27px 1px 6px;
   width: 200px;
   height: 27px;
@@ -12785,7 +12764,6 @@ span.editinstructions {
 }
 
 .fp-pathbar .fp-path-folder {
-  background-image: url('[[pix:theme|fp/path_folder_rtl]]');
   background-position: right;
   background-repeat: no-repeat;
   width: 27px;
@@ -12872,7 +12850,6 @@ span.editinstructions {
 
 .file-picker .ygtvtn,
 .filemanager .ygtvtn {
-  background-image: url('[[pix:y/tn_rtl]]');
   background-position: right;
   background-repeat: no-repeat;
   width: 17px;
@@ -12881,7 +12858,6 @@ span.editinstructions {
 
 .file-picker .ygtvtm,
 .filemanager .ygtvtm {
-  background-image: url('[[pix:y/tm]]');
   background-position: right 10px;
   background-repeat: no-repeat;
   width: 13px;
@@ -12891,7 +12867,6 @@ span.editinstructions {
 
 .file-picker .ygtvtmh,
 .filemanager .ygtvtmh {
-  background-image: url('[[pix:y/tm]]');
   background-position: right 10px;
   background-repeat: no-repeat;
   width: 13px;
@@ -12901,7 +12876,6 @@ span.editinstructions {
 
 .file-picker .ygtvtp,
 .filemanager .ygtvtp {
-  background-image: url('[[pix:y/tp_rtl]]');
   background-position: right 10px;
   background-repeat: no-repeat;
   width: 13px;
@@ -12911,7 +12885,6 @@ span.editinstructions {
 
 .file-picker .ygtvtph,
 .filemanager .ygtvtph {
-  background-image: url('[[pix:y/tp_rtl]]');
   background-position: right 10px;
   background-repeat: no-repeat;
   width: 13px;
@@ -12921,7 +12894,6 @@ span.editinstructions {
 
 .file-picker .ygtvln,
 .filemanager .ygtvln {
-  background-image: url('[[pix:y/ln_rtl]]');
   background-position: right;
   background-repeat: no-repeat;
   width: 17px;
@@ -12930,7 +12902,6 @@ span.editinstructions {
 
 .file-picker .ygtvlm,
 .filemanager .ygtvlm {
-  background-image: url('[[pix:y/lm]]');
   background-position: right 10px;
   background-repeat: no-repeat;
   width: 13px;
@@ -12940,7 +12911,6 @@ span.editinstructions {
 
 .file-picker .ygtvlmh,
 .filemanager .ygtvlmh {
-  background-image: url('[[pix:y/lm]]');
   background-position: right 10px;
   background-repeate: no-repeat;
   width: 13px;
@@ -12950,7 +12920,6 @@ span.editinstructions {
 
 .file-picker .ygtvlp,
 .filemanager .ygtvlp {
-  background-image: url('[[pix:y/lp_rtl]]');
   background-position: right 10px;
   background-repeat: no-repeat;
   width: 13px;
@@ -12960,7 +12929,6 @@ span.editinstructions {
 
 .file-picker .ygtvlph,
 .filemanager .ygtvlph {
-  background-image: url('[[pix:y/lp_rtl]]');
   background-position: right 10px;
   background-repeat: no-repeat;
   width: 13px;
@@ -12970,14 +12938,12 @@ span.editinstructions {
 
 .file-picker .ygtvloading,
 .filemanager .ygtvloading {
-  background: transparent url('[[pix:y/loading]]') 0 0 no-repeat;
   width: 16px;
   height: 22px;
 }
 
 .file-picker .ygtvdepthcell,
 .filemanager .ygtvdepthcell {
-  background: url('[[pix:y/vline]]') 0 0 no-repeat;
   width: 17px;
   height: 32px;
 }
@@ -13404,12 +13370,10 @@ a.ygtvspacer:hover {
 }
 
 .fp-iconview .fp-file.fp-hasreferences .fp-reficons1 {
-  background: url('[[pix:theme|fp/link]]') no-repeat;
   background-position: bottom left;
 }
 
 .fp-iconview .fp-file.fp-isreference .fp-reficons2 {
-  background: url('[[pix:theme|fp/alias]]') no-repeat;
   background-position: bottom right;
 }
 
@@ -13418,7 +13382,6 @@ a.ygtvspacer:hover {
 }
 
 .filemanager .fp-iconview .fp-file.fp-originalmissing .fp-thumbnail {
-  background: url([[pix:s/dead]]) no-repeat;
   background-position: center center;
 }
 
@@ -13445,7 +13408,6 @@ a.ygtvspacer:hover {
 }
 
 .filemanager .fp-filename-icon.fp-hasreferences .fp-reficons1 {
-  background: url('[[pix:theme|fp/link_sm]]') no-repeat 0 0;
   height: 100%;
   width: 100%;
   position: absolute;
@@ -13455,7 +13417,6 @@ a.ygtvspacer:hover {
 }
 
 .filemanager .fp-filename-icon.fp-isreference .fp-reficons2 {
-  background: url('[[pix:theme|fp/alias_sm]]') no-repeat 0 0;
   height: 100%;
   width: 100%;
   position: absolute;
@@ -13559,7 +13520,6 @@ a.ygtvspacer:hover {
 }
 
 .dndupload-arrow {
-  background: url([[pix:theme|fp/dnd_arrow]]) center no-repeat;
   width: 100%;
   height: 80px;
   position: absolute;
@@ -17521,13 +17481,8 @@ textarea.mform fieldset .fitem .felement input[type="password"] {
 .mform fieldset.collapsible legend a.fheader {
   padding: 0 20px 0 5px;
   margin-right: -20px;
-  background-image: url([[pix:t/expanded]]);
   background-repeat: no-repeat;
   background-position: right;
-}
-
-.mform fieldset.collapsed legend a.fheader {
-  background-image: url([[pix:t/collapsed_rtl]]);
 }
 
 .jsenabled .mform .collapsed .fcontainer {
@@ -19472,7 +19427,7 @@ input[type="reset"] .badge {
 
 button.yui3-button.closebutton,
 button.yui3-button.closebutton:hover {
-  background-position: 100% 0;
+  background-position: 0 0;
 }
 
 input.fp-btn-choose {
@@ -20046,9 +20001,11 @@ input.fp-btn-choose {
     display: none;
   }
 
+  /*@noflip*/
+
   .dir-rtl .moodlezoom {
-    margin-right: 0px;
-    margin-left: 10px;
+    margin-left: 0px;
+    margin-right: 10px;
   }
 
   body.zoomin {
@@ -20500,13 +20457,17 @@ fieldset[disabled] #dock .dockedtitle.active {
 
 .dir-rtl.has_dock #page,
 .dir-rtl.has_dock .moodleheader {
-  padding-right: 15px;
-  padding-left: 45px;
+  /*@noflip*/
+  padding-left: 15px;
+  /*@noflip*/
+  padding-right: 45px;
 }
 
 .dir-rtl #dock {
-  right: auto;
-  left: 0%;
+  /*@noflip*/
+  left: auto;
+  /*@noflip*/
+  right: 0%;
 }
 
 .dir-rtl #dock .dockedtitle h2 {
@@ -20514,11 +20475,13 @@ fieldset[disabled] #dock .dockedtitle.active {
 }
 
 .dir-rtl #dockeditempanel {
-  left: 100%;
+  /*@noflip*/
+  right: 100%;
 }
 
 .dir-rtl #dockeditempanel .dockeditempanel_hd .commands {
-  text-align: right;
+  /*@noflip*/
+  text-align: left;
 }
 
 .gradetreebox h4 {
@@ -20643,6 +20606,15 @@ fieldset[disabled] #page-grade-grading-manage .actions .action {
   background: #ffffff none no-repeat top left;
 }
 
+.dir-rtl #rubric-rubric.gradingform_rubric {
+  /*@noflip*/
+}
+
+.dir-rtl #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .level {
+  /*@noflip*/
+  /*@noflip*/
+}
+
 .dir-rtl #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .level .score {
   text-align: left;
   float: left;
@@ -20652,6 +20624,7 @@ fieldset[disabled] #page-grade-grading-manage .actions .action {
 
 .dir-rtl #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .level .delete {
   float: right;
+  /*@noflip*/
 }
 
 .dir-rtl #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .level .delete input {
@@ -20662,12 +20635,18 @@ fieldset[disabled] #page-grade-grading-manage .actions .action {
 .dir-rtl #rubric-rubric.gradingform_rubric .addcriterion {
   margin-left: 5px;
   margin-right: 0px;
+  /*@noflip*/
 }
 
 .dir-rtl #rubric-rubric.gradingform_rubric .addcriterion input {
   padding-left: 26px;
   padding-right: 10px;
   background-position: left 8px top 8px;
+}
+
+.dir-rtl #rubric-rubric.gradingform_rubric .options .option {
+  /*@noflip*/
+  /*@noflip*/
 }
 
 .dir-rtl #rubric-rubric.gradingform_rubric .options .option .value {
@@ -20869,7 +20848,6 @@ fieldset[disabled] #rubric-rubric.gradingform_rubric .addcriterion {
   text-shadow: inherit;
   border: 0px none;
   line-height: inherit;
-  background: transparent url([[pix:t/add]]) no-repeat 7px 8px;
   padding-right: 26px;
 }
 

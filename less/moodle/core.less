@@ -105,7 +105,7 @@
     }
 
     // Negate the push applied when transitioning from three columns.
-	// LTR does not have this vice-versa issue as no 'push' for post.
+    // LTR does not have this vice-versa issue as no 'push' for post.
     &.empty-region-side-post.used-region-side-pre #block-region-side-pre {
         .make-sm-column-push(0);
         .make-lg-column-push(0);
@@ -226,15 +226,15 @@ a.autolink.glossary:hover {
     text-align: right;
     .collapseexpand {
         padding-left: 20px;
-        background-image: url([[pix:t/collapsed]]);
+        // Background image in ../theme/pix.less.
         background-position: left;
         background-repeat: no-repeat;
     }
 }
 
-.collapsible-actions .collapse-all {
-    background-image: url([[pix:t/expanded]]);
-}
+//.collapsible-actions .collapse-all {
+    // Background image in ../theme/pix.less.
+//}
 
 .yui-overlay {
     .yui-widget-bd {
@@ -672,7 +672,7 @@ a.skip:active {
     color: inherit;
 }
 .smartselect .smartselect_submenuitem {
-    background-image: url([[pix:t/collapsed]]);
+    // Background image in ../theme/pix.less.
     background-repeat: no-repeat;
     background-position: 100%;
 }
@@ -905,7 +905,7 @@ body#page-lib-editor-tinymce-plugins-moodlemedia-preview {
     display: inline-block;
     cursor: pointer;
     padding: 0;
-    background-image: url([[pix:theme|sprite]]);
+    // Background image in ../theme/pix.less.
     background-repeat: no-repeat;
     border-style: none;
 }

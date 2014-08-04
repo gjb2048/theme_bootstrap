@@ -264,9 +264,6 @@ th {
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
-
-  src: url('[[font:theme|glyphicons-halflings-regular.eot]]');
-  src: url('[[font:theme|glyphicons-halflings-regular.eot]]?#iefix') format('embedded-opentype'), url('[[font:theme|glyphicons-halflings-regular.woff]]') format('woff'), url('[[font:theme|glyphicons-halflings-regular.ttf]]') format('truetype'), url('[[font:theme|glyphicons-halflings-regular.svg]]#glyphicons_halflingsregular') format('svg');
 }
 .glyphicon {
   position: relative;
@@ -6892,12 +6889,8 @@ a.autolink.glossary:hover {
 }
 .collapsible-actions .collapseexpand {
   padding-left: 20px;
-  background-image: url([[pix:t/collapsed]]);
   background-repeat: no-repeat;
   background-position: left;
-}
-.collapsible-actions .collapse-all {
-  background-image: url([[pix:t/expanded]]);
 }
 .yui-overlay .yui-widget-bd {
   position: relative;
@@ -7325,7 +7318,6 @@ a.skip:active {
   color: inherit;
 }
 .smartselect .smartselect_submenuitem {
-  background-image: url([[pix:t/collapsed]]);
   background-repeat: no-repeat;
   background-position: 100%;
 }
@@ -7559,7 +7551,6 @@ body#page-lib-editor-tinymce-plugins-moodlemedia-preview {
   padding: 0;
   vertical-align: middle;
   cursor: pointer;
-  background-image: url([[pix:theme|sprite]]);
   background-repeat: no-repeat;
   border-style: none;
 }
@@ -9481,7 +9472,6 @@ textarea.path-calendar .maincalendar .cal_courses_flt select {
   right: 22px;
   width: 16px;
   height: 16px;
-  background: url([[pix:i/ajaxloader]]) no-repeat;
 }
 #page-site-index .subscribelink {
   text-align: right;
@@ -9673,9 +9663,6 @@ span.editinstructions {
 .coursebox .enrolmenticons img {
   padding: 0 5px;
 }
-.coursebox.remotehost > .info > .categoryname a {
-  background-image: url([[pix:moodle|i/mnethost]]);
-}
 .coursebox .content {
   clear: both;
 }
@@ -9750,7 +9737,6 @@ span.editinstructions {
 .course_category_tree .category > .info > .categoryname {
   padding: 2px 18px;
   margin: 3px;
-  background-image: url([[pix:t/collapsed_empty]]);
   background-repeat: no-repeat;
   background-position: left;
 }
@@ -9772,10 +9758,6 @@ span.editinstructions {
 .course_category_tree .category.with_children > .info > .categoryname {
   line-height: 30px;
   cursor: pointer;
-  background-image: url([[pix:t/expanded]]);
-}
-.course_category_tree .category.with_children.collapsed > .info > .categoryname {
-  background-image: url([[pix:t/collapsed]]);
 }
 .course_category_tree .category.collapsed > .content {
   display: none;
@@ -10400,7 +10382,6 @@ span.editinstructions {
   width: 200px;
   height: 27px;
   padding: 2px 6px 1px 27px;
-  background: #fff url('[[pix:a/search]]') no-repeat 7px 7px;
   border: 1px solid #bbb;
 }
 .fp-viewbar {
@@ -10464,7 +10445,6 @@ span.editinstructions {
   width: 27px;
   height: 12px;
   margin-left: 4px;
-  background-image: url('[[pix:theme|fp/path_folder]]');
   background-repeat: no-repeat;
   background-position: left;
 }
@@ -10537,7 +10517,6 @@ span.editinstructions {
 .filemanager .ygtvtn {
   width: 17px;
   height: 22px;
-  background-image: url('[[pix:y/tn]]');
   background-repeat: no-repeat;
   background-position: left;
 }
@@ -10546,7 +10525,6 @@ span.editinstructions {
   width: 13px;
   height: 12px;
   cursor: pointer;
-  background-image: url('[[pix:y/tm]]');
   background-repeat: no-repeat;
   background-position: left 10px;
 }
@@ -10555,7 +10533,6 @@ span.editinstructions {
   width: 13px;
   height: 12px;
   cursor: pointer;
-  background-image: url('[[pix:y/tm]]');
   background-repeat: no-repeat;
   background-position: left 10px;
 }
@@ -10564,7 +10541,6 @@ span.editinstructions {
   width: 13px;
   height: 12px;
   cursor: pointer;
-  background-image: url('[[pix:y/tp]]');
   background-repeat: no-repeat;
   background-position: left 10px;
 }
@@ -10573,7 +10549,6 @@ span.editinstructions {
   width: 13px;
   height: 22px;
   cursor: pointer;
-  background-image: url('[[pix:y/tp]]');
   background-repeat: no-repeat;
   background-position: left 10px;
 }
@@ -10581,7 +10556,6 @@ span.editinstructions {
 .filemanager .ygtvln {
   width: 17px;
   height: 22px;
-  background-image: url('[[pix:y/ln]]');
   background-repeat: no-repeat;
   background-position: left;
 }
@@ -10590,7 +10564,6 @@ span.editinstructions {
   width: 13px;
   height: 12px;
   cursor: pointer;
-  background-image: url('[[pix:y/lm]]');
   background-repeat: no-repeat;
   background-position: left 10px;
 }
@@ -10599,7 +10572,6 @@ span.editinstructions {
   width: 13px;
   height: 12px;
   cursor: pointer;
-  background-image: url('[[pix:y/lm]]');
   background-position: left 10px;
 
   background-repeate: no-repeat;
@@ -10609,7 +10581,6 @@ span.editinstructions {
   width: 13px;
   height: 12px;
   cursor: pointer;
-  background-image: url('[[pix:y/lp]]');
   background-repeat: no-repeat;
   background-position: left 10px;
 }
@@ -10618,7 +10589,6 @@ span.editinstructions {
   width: 13px;
   height: 12px;
   cursor: pointer;
-  background-image: url('[[pix:y/lp]]');
   background-repeat: no-repeat;
   background-position: left 10px;
 }
@@ -10626,13 +10596,11 @@ span.editinstructions {
 .filemanager .ygtvloading {
   width: 16px;
   height: 22px;
-  background: transparent url('[[pix:y/loading]]') 0 0 no-repeat;
 }
 .file-picker .ygtvdepthcell,
 .filemanager .ygtvdepthcell {
   width: 17px;
   height: 32px;
-  background: url('[[pix:y/vline]]') 0 0 no-repeat;
 }
 .file-picker .ygtvblankdepthcell,
 .filemanager .ygtvblankdepthcell {
@@ -10985,18 +10953,15 @@ a.ygtvspacer:hover {
   height: 100%;
 }
 .fp-iconview .fp-file.fp-hasreferences .fp-reficons1 {
-  background: url('[[pix:theme|fp/link]]') no-repeat;
   background-position: bottom right;
 }
 .fp-iconview .fp-file.fp-isreference .fp-reficons2 {
-  background: url('[[pix:theme|fp/alias]]') no-repeat;
   background-position: bottom left;
 }
 .filemanager .fp-iconview .fp-file.fp-originalmissing .fp-thumbnail img {
   display: none;
 }
 .filemanager .fp-iconview .fp-file.fp-originalmissing .fp-thumbnail {
-  background: url([[pix:s/dead]]) no-repeat;
   background-position: center center;
 }
 .filemanager .yui3-datatable table {
@@ -11024,7 +10989,6 @@ a.ygtvspacer:hover {
   z-index: 1000;
   width: 100%;
   height: 100%;
-  background: url('[[pix:theme|fp/link_sm]]') no-repeat 0 0;
 }
 .filemanager .fp-filename-icon.fp-isreference .fp-reficons2 {
   position: absolute;
@@ -11033,7 +10997,6 @@ a.ygtvspacer:hover {
   z-index: 1001;
   width: 100%;
   height: 100%;
-  background: url('[[pix:theme|fp/alias_sm]]') no-repeat 0 0;
 }
 .filemanager .fp-contextmenu {
   display: none;
@@ -11120,7 +11083,6 @@ a.ygtvspacer:hover {
   top: 5px;
   width: 100%;
   height: 80px;
-  background: url([[pix:theme|fp/dnd_arrow]]) center no-repeat;
 }
 .fitem.disabled .filepicker-container,
 .fitem.disabled .fm-empty-container {
@@ -14431,12 +14393,8 @@ textarea.mform fieldset .fitem .felement input[type="password"] {
 .mform fieldset.collapsible legend a.fheader {
   padding: 0 5px 0 20px;
   margin-left: -20px;
-  background-image: url([[pix:t/expanded]]);
   background-repeat: no-repeat;
   background-position: left;
-}
-.mform fieldset.collapsed legend a.fheader {
-  background-image: url([[pix:t/collapsed]]);
 }
 .jsenabled .mform .collapsed .fcontainer {
   display: none;
@@ -16614,6 +16572,7 @@ input.fp-btn-choose {
   .moodlezoom span.zoomout {
     display: none;
   }
+  /*@noflip*/
   .dir-rtl .moodlezoom {
     margin-right: 10px;
     margin-left: 0;
@@ -17004,20 +16963,26 @@ fieldset[disabled] #dock .dockedtitle.active {
 }
 .dir-rtl.has_dock #page,
 .dir-rtl.has_dock .moodleheader {
+  /*@noflip*/
   padding-right: 45px;
+  /*@noflip*/
   padding-left: 15px;
 }
 .dir-rtl #dock {
+  /*@noflip*/
   right: 0;
+  /*@noflip*/
   left: auto;
 }
 .dir-rtl #dock .dockedtitle h2 {
   line-height: 36px - 11px;
 }
 .dir-rtl #dockeditempanel {
+  /*@noflip*/
   right: 100%;
 }
 .dir-rtl #dockeditempanel .dockeditempanel_hd .commands {
+  /*@noflip*/
   text-align: left;
 }
 .gradetreebox h4 {
@@ -17125,6 +17090,13 @@ fieldset[disabled] #page-grade-grading-manage .actions .action {
 .gradingform_rubric.editor .addcriterion input {
   background: #fff none no-repeat top left;
 }
+.dir-rtl #rubric-rubric.gradingform_rubric {
+  /*@noflip*/
+}
+.dir-rtl #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .level {
+  /*@noflip*/
+  /*@noflip*/
+}
 .dir-rtl #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .level .score {
   float: right;
   margin-right: 0;
@@ -17133,6 +17105,7 @@ fieldset[disabled] #page-grade-grading-manage .actions .action {
 }
 .dir-rtl #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .level .delete {
   float: left;
+  /*@noflip*/
 }
 .dir-rtl #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .level .delete input {
   right: auto;
@@ -17141,11 +17114,16 @@ fieldset[disabled] #page-grade-grading-manage .actions .action {
 .dir-rtl #rubric-rubric.gradingform_rubric .addcriterion {
   margin-right: 5px;
   margin-left: 0;
+  /*@noflip*/
 }
 .dir-rtl #rubric-rubric.gradingform_rubric .addcriterion input {
   padding-right: 26px;
   padding-left: 10px;
   background-position: right 8px top 8px;
+}
+.dir-rtl #rubric-rubric.gradingform_rubric .options .option {
+  /*@noflip*/
+  /*@noflip*/
 }
 .dir-rtl #rubric-rubric.gradingform_rubric .options .option .value {
   margin-right: 5px;
@@ -17321,7 +17299,6 @@ fieldset[disabled] #rubric-rubric.gradingform_rubric .addcriterion {
   line-height: inherit;
   color: inherit;
   text-shadow: inherit;
-  background: transparent url([[pix:t/add]]) no-repeat 7px 8px;
   border: 0 none;
 }
 #rubric-rubric.gradingform_rubric .options {

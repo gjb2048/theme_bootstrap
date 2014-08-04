@@ -88,14 +88,17 @@
     #rubric-rubric.gradingform_rubric {
         #rubric-criteria .criterion {
             .level {
+                /*@noflip*/
                 .score {
                     text-align: right;
                     float: right;
                     margin-left: 28px;
                     margin-right: 0px;
                 }
+                /*@noflip*/
                 .delete {
                     float: left;
+                    /*@noflip*/
                     input {
                         left: 0;
                         right: auto;
@@ -103,10 +106,12 @@
                 }
             }
         }
+        /*@noflip*/
         .addcriterion {
             margin-right: 5px;
             margin-left: 0px;
 
+            /*@noflip*/
             input {
                 padding-right: 26px;
                 padding-left: 10px;
@@ -115,10 +120,12 @@
         }
         .options {
             .option {
+                /*@noflip*/
                 .value {
                     margin-left: 0px;
                     margin-right: 5px;
                 }
+                /*@noflip*/
                 input {
                     // margins flipped for RTL.
                     margin-left: 12px;
@@ -213,7 +220,7 @@
                 text-shadow: inherit;
                 border: 0px none;
                 line-height: inherit;
-                background: transparent url([[pix:t/add]]) no-repeat 7px 8px;
+                // Background image in ../theme/pix.less.
                 padding-left: 26px;
             }
             margin-bottom:1em;
