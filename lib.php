@@ -47,7 +47,7 @@ function bootstrap_grid($hassidepre, $hassidepost) {
         $regions['post'] = 'empty';
     }
     
-    if ('rtl' === get_string('thisdirection', 'langconfig')) {
+    /*if ('rtl' === get_string('thisdirection', 'langconfig')) {
         if ($hassidepre && $hassidepost) {
             $regions['pre'] = 'col-sm-3  col-sm-push-3 col-lg-2 col-lg-push-2';
             $regions['post'] = 'col-sm-3 col-sm-pull-9 col-lg-2 col-lg-pull-10';
@@ -60,7 +60,7 @@ function bootstrap_grid($hassidepre, $hassidepost) {
             $regions['pre'] = 'empty';
             $regions['post'] = 'col-sm-3 col-sm-pull-9 col-lg-2 col-lg-pull-10';
         }
-    }
+    }*/
     return $regions;
 }
 
