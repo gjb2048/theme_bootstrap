@@ -7972,6 +7972,12 @@ img.icon.hide {
   display: none;
 }
 
+.dir-ltr.editing.used-region-side-post.used-region-side-pre {
+  /*@noflip*/
+  /*@noflip*/
+  /*@noflip*/
+}
+
 .dir-ltr.editing.used-region-side-post.used-region-side-pre #region-main {
   position: relative;
   min-height: 1px;
@@ -8059,6 +8065,12 @@ img.icon.hide {
   .dir-ltr.editing.used-region-side-post.used-region-side-pre #block-region-side-pre {
     left: 66.66666667%;
   }
+}
+
+.dir-rtl.editing.used-region-side-post.used-region-side-pre {
+  /*@noflip*/
+  /*@noflip*/
+  /*@noflip*/
 }
 
 .dir-rtl.editing.used-region-side-post.used-region-side-pre #region-main {
@@ -8266,6 +8278,13 @@ img.icon.hide {
   .has_dock.dir-ltr.empty-region-side-post.used-region-side-pre #block-region-side-pre {
     left: 83.33333333%;
   }
+}
+
+.has_dock.dir-rtl {
+  /*@noflip*/
+  /*@noflip*/
+  /*@noflip*/
+  /*@noflip*/
 }
 
 @media (min-width: 768px) {
@@ -20001,13 +20020,6 @@ input.fp-btn-choose {
     display: none;
   }
 
-  /*@noflip*/
-
-  .dir-rtl .moodlezoom {
-    margin-left: 0px;
-    margin-right: 10px;
-  }
-
   body.zoomin {
     padding-top: 0;
   }
@@ -20455,35 +20467,6 @@ fieldset[disabled] #dock .dockedtitle.active {
   cursor: pointer;
 }
 
-.dir-rtl.has_dock #page,
-.dir-rtl.has_dock .moodleheader {
-  /*@noflip*/
-  padding-left: 15px;
-  /*@noflip*/
-  padding-right: 45px;
-}
-
-.dir-rtl #dock {
-  /*@noflip*/
-  left: auto;
-  /*@noflip*/
-  right: 0%;
-}
-
-.dir-rtl #dock .dockedtitle h2 {
-  line-height: 36px - 11px;
-}
-
-.dir-rtl #dockeditempanel {
-  /*@noflip*/
-  right: 100%;
-}
-
-.dir-rtl #dockeditempanel .dockeditempanel_hd .commands {
-  /*@noflip*/
-  text-align: left;
-}
-
 .gradetreebox h4 {
   font-size: 14px;
 }
@@ -20604,59 +20587,6 @@ fieldset[disabled] #page-grade-grading-manage .actions .action {
 .gradingform_rubric.editor .addlevel input,
 .gradingform_rubric.editor .addcriterion input {
   background: #ffffff none no-repeat top left;
-}
-
-.dir-rtl #rubric-rubric.gradingform_rubric {
-  /*@noflip*/
-}
-
-.dir-rtl #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .level {
-  /*@noflip*/
-  /*@noflip*/
-}
-
-.dir-rtl #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .level .score {
-  text-align: left;
-  float: left;
-  margin-right: 28px;
-  margin-left: 0px;
-}
-
-.dir-rtl #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .level .delete {
-  float: right;
-  /*@noflip*/
-}
-
-.dir-rtl #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .level .delete input {
-  right: 0;
-  left: auto;
-}
-
-.dir-rtl #rubric-rubric.gradingform_rubric .addcriterion {
-  margin-left: 5px;
-  margin-right: 0px;
-  /*@noflip*/
-}
-
-.dir-rtl #rubric-rubric.gradingform_rubric .addcriterion input {
-  padding-left: 26px;
-  padding-right: 10px;
-  background-position: left 8px top 8px;
-}
-
-.dir-rtl #rubric-rubric.gradingform_rubric .options .option {
-  /*@noflip*/
-  /*@noflip*/
-}
-
-.dir-rtl #rubric-rubric.gradingform_rubric .options .option .value {
-  margin-right: 0px;
-  margin-left: 5px;
-}
-
-.dir-rtl #rubric-rubric.gradingform_rubric .options .option input {
-  margin-right: 12px;
-  margin-left: 5px;
 }
 
 #rubric-rubric.gradingform_rubric #rubric-criteria {

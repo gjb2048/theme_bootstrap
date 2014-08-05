@@ -123,28 +123,3 @@ body.has_dock {
         }
     }
 }
-
-.dir-rtl {
-    &.has_dock #page,
-    &.has_dock .moodleheader {
-        /*@noflip*/ padding-left: (@grid-gutter-width / 2);
-        /*@noflip*/ padding-right: (@dock-width + (@dock-title-margin * 3));
-    }
-    #dock {
-        /*@noflip*/ left: auto;
-        /*@noflip*/ right: 0%;
-        .dockedtitle {
-            h2 {
-                line-height: @dock-width - @dock-title-font-size;
-            }
-        }
-    }
-    #dockeditempanel {
-        /*@noflip*/ right: 100%;
-        .dockeditempanel_hd {
-            .commands {
-                /*@noflip*/ text-align: left;
-            }
-        }
-    }
-}
