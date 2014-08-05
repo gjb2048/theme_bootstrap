@@ -46,21 +46,7 @@ function bootstrap_grid($hassidepre, $hassidepost) {
         $regions['pre'] = 'empty';
         $regions['post'] = 'empty';
     }
-    
-    if ('rtl' === get_string('thisdirection', 'langconfig')) {
-        if ($hassidepre && $hassidepost) {
-            $regions['pre'] = 'col-sm-3  col-sm-push-3 col-lg-2 col-lg-push-2';
-            $regions['post'] = 'col-sm-3 col-sm-pull-9 col-lg-2 col-lg-pull-10';
-        } else if ($hassidepre && !$hassidepost) {
-            $regions = array('content' => 'col-sm-9 col-lg-10');
-            $regions['pre'] = 'col-sm-3 col-lg-2';
-            $regions['post'] = 'empty';
-        } else if (!$hassidepre && $hassidepost) {
-            $regions = array('content' => 'col-sm-9 col-sm-push-3 col-lg-10 col-lg-push-2');
-            $regions['pre'] = 'empty';
-            $regions['post'] = 'col-sm-3 col-sm-pull-9 col-lg-2 col-lg-pull-10';
-        }
-    }
+
     return $regions;
 }
 
@@ -79,4 +65,42 @@ function theme_bootstrap_initialise_zoom(moodle_page $page) {
  */
 function theme_bootstrap_get_zoom() {
     return get_user_preferences('theme_bootstrap_zoom', '');
+}
+
+// Moodle CSS file serving.
+function theme_bootstrap_get_csswww() {
+    global $CFG;
+
+    if (right_to_left()) {
+        $moodlecss = 'moodle-rtl.css';
+    } else {
+        $moodlecss = 'moodle.css';
+    }
+
+    $syscontext = context_system::instance();
+    $itemid = theme_get_revision();
+    $url = moodle_url::make_file_url("$CFG->wwwroot/pluginfile.php", "/$syscontext->id/theme_bootstrap/style/$itemid/$moodlecss");
+    // Now this is tricky because the we can not hard code http or https here, lets use the relative link.
+    // Note: unfortunately moodle_url does not support //urls yet.
+    $url = preg_replace('|^https?://|i', '//', $url->out(false));
+
+    return $url;
+}
+
+function theme_bootstrap_pluginfile($course, $cm, $context, $filearea, $args, $forcedownload, array $options = array()) {
+    if ($context->contextlevel == CONTEXT_SYSTEM) {
+        if ($filearea === 'style') {
+            global $CFG;
+            if (!empty($CFG->themedir)) {
+                $thestylepath = $CFG->themedir . '/bootstrap/style/';
+            } else {
+                $thestylepath = $CFG->dirroot . '/theme/bootstrap/style/';
+            }
+            send_file($thestylepath.$args[1], $args[1], 20 , 0, false, false, 'text/css');
+        } else {
+            send_file_not_found();
+        }
+    } else {
+        send_file_not_found();
+    }
 }
